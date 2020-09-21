@@ -1,6 +1,6 @@
 #!/bin/bash
 
-app=dockerapp
+app=docker_registry
 
 # Remove Docker container and systemd service but keep the pulled image and Docker
 sudo yunohost service remove container-$app

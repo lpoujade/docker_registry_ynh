@@ -5,20 +5,18 @@ domain=$1
 path=$2
 is_public=$3
 
-# app -> your app name
 # repository -> your repository from http://registry.hub.docker.com
 # autostart -> "Yes" to make the container start at boot, "No" to disable
 # volume -> "Yes" to mount /home/yunohost.docker/container-app as /home/yunohost in the container
 # command -> the command to run the container
 
-app=dockerapp
-repository="tuxeh/sonarr" #
+app=docker_registry
+#repository="tuxeh/sonarr" #
 autostart="Yes"
 volume="No"
-command="-p 8989:8989"
+command="-p 5000:5486"
 
-# COPY PASTE THE FOLLOWING for all the ports you forward to your host
-sudo yunohost app checkport 8989
+sudo yunohost app checkport 5486
 if [[ ! $? -eq 0 ]]; then
   exit 1
 fi
