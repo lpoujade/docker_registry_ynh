@@ -1,12 +1,12 @@
 {
     "name": "Docker template app",
-    "id": "dockerapp",
+    "id": "docker_registry",
     "description": {
-        "en": "Template package for a Dockerized YunoHost application",
-        "fr": "Modèle d'application dockerisée pour YunoHost"
+        "en": "Docker registry",
+        "fr": "Registre Docker"
     },
     "developer": {
-        "name": "scith"
+        "name": "lpo"
     },
     "multi_instance": "false",
     "arguments": {
@@ -15,8 +15,8 @@
                 "name": "domain",
                 "type": "domain",
                 "ask": {
-                    "en": "Choose a domain for dockerapp",
-                    "fr": "Choisissez un domaine pour dockerapp"
+                    "en": "Choose a domain for docker registry",
+                    "fr": "Choisissez un domaine pour docker registry"
                 },
                 "example": "domain.org"
             },
@@ -24,11 +24,11 @@
                 "name": "path",
                 "type": "path",
                 "ask": {
-                    "en": "Choose a path for dockerapp",
-                    "fr": "Choisissez un chemin pour dockerapp"
+                    "en": "Choose a path for docker registry",
+                    "fr": "Choisissez un chemin pour docker registry"
                 },
-                "example": "/dockerapp",
-                "default": "/dockerapp"
+                "example": "/",
+                "default": "/"
             },
             {
                 "name": "is_public",
